@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/myAnimeEstilo.css">
+    <link rel="stylesheet" type="text/css" href="./css/myAnimeEstrutura.css">
+    <link rel="stylesheet" type="text/css" href="./css/StyleJs.css">
+    <script src="https://kit.fontawesome.com/4c5550b9f2.js" crossorigin="anonymous"></script>
+    <title>My Anime</title>
+</head>
+<body>
+    <div data-modal="searchAnime" class="modal_container">
+       <div class="modal">
+            <input class="modal_input" placeholder="Digite o nome do anime">
+            <button data-modal="btn-CloseSearch" class="fecharModal">
+                <i  class="fas fa-times "></i>
+            </button>
+       </div>
+    </div>
+   
+    <main class="main">
+        <header class="header">
+            <div class="header_container">
+                <div class="logo">
+                    <img src="./imagens/logo_v2-3.png">
+                </div>
+                <nav class="header_nav">
+                    <ul>
+                        <li><a class="nav-primeiro" href=""> <i class="fas fa-home"></i>Inicio</a></li>
+                        <li><a href=""> <i class="fas fa-play-circle"></i>Lista de Animes</a></li>
+                        <li><a href=""> <i class="fas fa-heart"></i>Favoritos</a></li>
+                        <li><a href="">Mangás</a></li>
+                        <li><a href=""> <i class="far fa-calendar-alt"></i>Calendario</a></li>
+                        <li><a href=""> <i class="far fa-question-circle"></i>Como assistir?</a></li>
+                    </ul>
+                </nav>
+                <div data-modal="btn-OpenSearch" class="SearchModal">
+                    <div data-modal="header" class="IconSearch">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </header>
+
+        <section data-informativo="info-menu" class="informativo">
+            <article class="infoA">
+                Olá, Minna!
+            </article>
+           
+            <article class="infoB">
+                <div>NOTA - Recomendo a usarem o navegador google chrome para assistir ele é o mais compatível com o nosso site!!!</div>
+                <p>- Salvem o site nos favoritos</p>
+                <p>- DOWNLOADS FUNCIONANDO NORMALMENTE!!!</p>
+                <p>- Para aqueles que tiverem problemas no player usem o navegador Microsoft Edge!!</p>
+                <p>- Eu sei que é chato esse cheking de ip porém n posso tirar por enquanto galera não até os ataques acabarem!! isso vai nos deixar mais fortes ainda do que ja somos! amo vcs tropa</p>
+            </article>
+            <button data-informativo="btn-menu" class="btn-info">
+                <i class="fas fa-times"></i>
+            </button> 
+        </section>
+
+        
+        <section class="lancamentos">
+            <article class="lancamentos_A">
+                Lançamentos
+                <button class="btn-lancamentos">ver mais </button>
+            </article>
+            <article class="lancamentos_B">
+                <div class="lancamentos_itens">
+                    <img src="./imagens/imagens Small/Kaguya Small.png">
+                    <p class="lancamentos_titulo">Kaguya Sama</p>
+                    <div class="lancamentos_itens_icons">
+                        <i class="fas fa-play "></i>
+                    </div>
+                    <span class="lancamentos_itens_status">NOVO</span>
+                    <div class="lancamentos_itens_eps">
+                        <span class="">24 episodios</span>
+                    </div>
+                </div>
+                <div class="lancamentos_itens">
+                    <img src="./imagens/imagens Small/hanayome small.png">
+                    <p class="lancamentos_titulo">Gotoubon Hanayome </p>
+                    <div class="lancamentos_itens_icons">
+                        <i class="fas fa-play "></i>
+                    </div>
+                    <span class="lancamentos_itens_status">NOVO</span>
+                    <div class="lancamentos_itens_eps">
+                        <span class="">24 episodios</span>
+                    </div>
+                </div>
+                <div class="lancamentos_itens">
+                    <img src="./imagens/imagens Small/pokemon-2019 small.png">
+                    <p class="lancamentos_titulo">Pokemon 2019</p>
+                    <div class="lancamentos_itens_icons">
+                        <i class="fas fa-play "></i>
+                    </div>
+                    <span class="lancamentos_itens_status">NOVO</span>
+                    <div class="lancamentos_itens_eps">
+                        <span class="">78 episodios</span>
+                    </div>
+                </div>
+                <div class="lancamentos_itens">
+                    <img src="./imagens/imagens Small/higewoSoru 1 small.png">
+                    <p class="lancamentos_titulo">Higen Wo Soru</p>
+                    <div class="lancamentos_itens_icons">
+                        <i class="fas fa-play "></i>
+                    </div>
+                    <span class="lancamentos_itens_status">NOVO</span>
+                    <div class="lancamentos_itens_eps">
+                        <span class="">13 episodios</span>
+                    </div>
+                </div>
+                <div class="lancamentos_itens">
+                    <img src="./imagens/imagens Small/nagatoro 1 small.png">
+                    <p class="lancamentos_titulo">Nagatoro</p>
+                    <div class="lancamentos_itens_icons">
+                        <i class="fas fa-play "></i>
+                    </div>
+                    <span class="lancamentos_itens_status">NOVO</span>
+                    <div class="lancamentos_itens_eps">
+                        <span class="">12 episodios</span>
+                    </div>
+                </div>
+                <div class="lancamentos_itens">
+                    <img src="./imagens/imagens Small/konosuba 1 small.png">
+                    <p class="lancamentos_titulo">KonoSuba</p>
+                    <div class="lancamentos_itens_icons">
+                        <i class="fas fa-play "></i>
+                    </div>
+                    <span class="lancamentos_itens_status">NOVO</span>
+                    <div class="lancamentos_itens_eps">
+                        <span class="">24 episodios</span>
+                    </div>
+                </div>
+                <div class="lancamentos_itens">
+                    <img src="./imagens//imagens Small/kanojo-mo-kanojo-large 1 small.png">
+                    <p class="lancamentos_titulo">Kanojo mo Kanojo</p>
+                    <div class="lancamentos_itens_icons">
+                        <i class="fas fa-play "></i>
+                    </div>
+                    <span class="lancamentos_itens_status">NOVO</span>
+                    <div class="lancamentos_itens_eps">
+                        <span class="">13 episodios</span>
+                    </div>
+                </div>
+                <div class="lancamentos_itens">
+                    <img src="./imagens/imagens Small/sakuraSou 1 small.png">
+                    <p class="lancamentos_titulo">sakuraSou</p>
+                    <div class="lancamentos_itens_icons">
+                        <i class="fas fa-play "></i>
+                    </div>
+                    <span class="lancamentos_itens_status">NOVO</span>
+                    <div class="lancamentos_itens_eps">
+                        <span class="">24 episodios</span>
+                    </div>
+                </div>
+               
+
+               
+            </article>
+        </section>
+
+
+        <aside class="discord">
+            <img class="discord-rebelde" src="./imagens/discord.png">
+        </aside>
+
+
+        <section class="ultimos_lancados">
+            <article class="ultimos_lancados_A">
+                Ultimos Episodios em Lançamento
+            </article>
+            <article class="ultimos_lancados_B">
+                <div data-carousel="ultimos-lancados" class="lancamentos_itens"> 
+                    <img src="./imagens/ultimos lançamento/kanojo ep small.png">
+                    <h3>Kanojo mo Kanojo</h3>
+                    <p>Episodio 08</p>
+                   
+                </div>
+                <div data-carousel="ultimos-lancados" class="lancamentos_itens">
+                    <img src="./imagens/ultimos lançamento/nagatoro ep small.png">
+                    <h3>Negatoro</h3>
+                    <p>Episodio 10</p>
+                    
+                </div>
+                <div data-carousel="ultimos-lancados" class="lancamentos_itens">
+                    <img src="./imagens/ultimos lançamento/kaguya ep small.png">
+                    <h3>Kaguya Sama</h3>
+                    <p>Episodio 14</p>
+                   
+                </div>
+                <div data-carousel="ultimos-lancados" class="lancamentos_itens">
+                    <img src="./imagens/ultimos lançamento/demon ep small.png">
+                    <h3>Demon Slayer</h3>
+                    <p>Episodio 06</p>
+                   
+                </div>
+                <div data-carousel="ultimos-lancados" class="lancamentos_itens">
+                    <img src="./imagens/ultimos lançamento/attack ep small.png">
+                    <h3>Attack On Titan</h3>
+                    <p>Episodio 17</p>
+                    
+                </div>
+                <div data-carousel="ultimos-lancados" class="lancamentos_itens">
+                    <img src="./imagens/ultimos lançamento/hanayome ep small.png">
+                    <h3>Gotoubon Hanayome</h3>
+                    <p>Episodio 07</p>
+                    
+                </div> 
+                <div data-carousel="ultimos-lancados" class="lancamentos_itens">
+                    <img src="./imagens/ultimos lançamento/hige no soru ep small.png">
+                    <h3>Hige no Soru</h3>
+                    <p>Episodio 03</p>
+                   
+                </div>
+                <div data-carousel="ultimos-lancados" class="lancamentos_itens">
+                    <img src="./imagens/ultimos lançamento/konsba sp small.png">
+                    <h3>Konosuba</h3>
+                    <p>Episodio 05</p>
+                    
+                </div>
+                <div data-carousel="ultimos-lancados" class="lancamentos_itens">
+                    <img src="./imagens/ultimos lançamento/horimya ep small.png">
+                    <h3>Horimya</h3>
+                    <p>Episodio 09</p>
+                    
+                </div>
+            </article>
+            <button data-carousel="lancados-back" id="btn-lancados-back">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <button data-carousel="lancados-next" id="btn-lancados-next">
+                <i class="fas fa-angle-right"></i>
+            </button id="btn-lancados-back">
+        </section>
+
+
+        <section class="ultimos_adicionados">
+            <article class="ultimos_adicionados_A">
+                Ultimos Episodios Lançados
+            </article>
+            <article class="ultimos_adicionados_B">
+                <div data-carousel="ultimos-adicionados" class="adicionados_itens">
+                   <img src="./imagens/ultimos adicionados/boruto small.png">
+                   <h3>Boruto</h3>
+                   <p>Episodio 53</p>
+                    
+                </div>
+                <div data-carousel="ultimos-adicionados" class="adicionados_itens">
+                    <img src="./imagens/ultimos adicionados/toradora small.png">
+                    <h3>Toradora</h3>
+                    <p>Episodio 11</p>
+                </div>
+                <div data-carousel="ultimos-adicionados" class="adicionados_itens">
+                    <img src="./imagens/ultimos adicionados/sword art on  small.png">
+                    <h3>Sword Art</h3>
+                    <p>Episodio 08</p>
+                </div>
+                <div data-carousel="ultimos-adicionados" class="adicionados_itens">
+                    <img src="./imagens/ultimos adicionados/hanayoome small.png">
+                    <h3>Gotoubon Hanayome</h3>
+                    <p>Episodio 04</p>
+                </div>
+                <div data-carousel="ultimos-adicionados" class="adicionados_itens">
+                    <img src="./imagens/ultimos adicionados/kimi small.png">
+                    <h3>Kimi no Todoke</h3>
+                    <p>Episodio 13</p>
+                </div>
+                <div data-carousel="ultimos-adicionados" class="adicionados_itens">
+                    <img src="./imagens/ultimos adicionados/dragon small.png">
+                    <h3>Dragon Ball</h3>
+                    <p>Episodio 79</p>
+                </div>
+                <div data-carousel="ultimos-adicionados" class="adicionados_itens">
+                    <img src="./imagens/ultimos adicionados/dragon sup small.png">
+                    <h3>Dragon Ball</h3>
+                    <p>Episodio 80</p>
+                </div>
+                <div data-carousel="ultimos-adicionados" class="adicionados_itens">
+                    <img src="./imagens/ultimos adicionados/juju small.png">
+                    <h3>Jujutsu</h3>
+                    <p>Episodio 10</p>
+                </div>
+                <div data-carousel="ultimos-adicionados" class="adicionados_itens">
+                    <img src="./imagens/ultimos adicionados/sword art small.png">
+                    <h3>Swort Art</h3>
+                    <p>Episodio 14</p>
+                </div>
+            </article>   
+            
+            
+            <button data-carousel="adicionados-back" id="btn-adicionados-back">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <button data-carousel="adicionados-next" id="btn-adicionados-next">
+                <i class="fas fa-angle-right"></i>
+            </button id="btn-lancados-back">
+        </section>
+
+
+        <aside class="top10">
+            <article class="top10_A">Top 10 Animes</article>
+            <article class="top10_B">
+                <div class="top10_B_itens">
+                    
+                    <div class="top10_ranking"> 1 </div>
+                    <h3>One Piece</h3>
+                    <span>
+                        <i class="fas fa-eye"></i> +16M
+                    </span>
+                    
+                </div>
+
+                <div class="top10_B_itens">
+                    <div class="top10_ranking">
+                        <div>2</div>
+                    </div>
+                    <div class="top10_anime">
+                       <img src="./imagens/top10/narutoTop10.png">
+                       <div>
+                            <h3>Naruto Shippuden</h3>
+                            <span><i class="fas fa-eye"></i>  +15M</span>
+                       </div>
+                    </div>   
+                </div>
+
+                <div class="top10_B_itens">
+                    <div class="top10_ranking">
+                        <div>3</div>
+                    </div>
+                    <div class="top10_anime">
+                       <img src="./imagens/top10/attackTop10.png">
+                       <div>
+                            <h3>Shingeky no Kyogin</h3>
+                            <span><i class="fas fa-eye"></i>  +7M</span>
+                       </div>
+                    </div>   
+                </div>
+
+                <div class="top10_B_itens">
+                    <div class="top10_ranking">
+                        <div>4</div>
+                    </div>
+                    <div class="top10_anime">
+                       <img src="./imagens/top10/demonTop10.png">
+                       <div>
+                            <h3>Demon Slayer</h3>
+                            <span><i class="fas fa-eye"></i>  +6M</span>
+                       </div>
+                    </div>   
+                </div>
+
+                <div class="top10_B_itens">
+                    <div class="top10_ranking">
+                        <div>5</div>
+                    </div>
+                    <div class="top10_anime">
+                       <img src="./imagens/top10/jujutsuTop10.png">
+                       <div>
+                            <h3>Jujutsu no Kaizen</h3>
+                            <span><i class="fas fa-eye"></i>  +5.8M</span>
+                       </div>
+                    </div>   
+                </div>
+
+                <div class="top10_B_itens">
+                    <div class="top10_ranking">
+                        <div>6</div>
+                    </div>
+                    <div class="top10_anime">
+                       <img src="./imagens/top10/borutoTop10.png">
+                       <div>
+                            <h3>Boruto Next Gen...</h3>
+                            <span><i class="fas fa-eye"></i>  +5.6M</span>
+                       </div>
+                    </div>   
+                </div>
+
+                <div class="top10_B_itens">
+                    <div class="top10_ranking">
+                        <div>7</div>
+                    </div>
+                    <div class="top10_anime">
+                       <img src="./imagens/top10/image 6.png">
+                       <div>
+                            <h3>Hunter x Hunter</h3>
+                            <span><i class="fas fa-eye"></i>  +3M</span>
+                       </div>
+                    </div>   
+                </div>
+
+                <div class="top10_B_itens">
+                    <div class="top10_ranking">
+                        <div>8</div>
+                    </div>
+                    <div class="top10_anime">
+                       <img src="./imagens/top10/dbzTop10.png">
+                       <div>
+                            <h3>Dragon Ball Super</h3>
+                            <span> <i class="fas fa-eye"></i> +2M</span>
+                       </div>
+                    </div>   
+                </div>
+
+                <div class="top10_B_itens">
+                    <div class="top10_ranking">
+                        <div>9</div>
+                    </div>
+                    <div class="top10_anime">
+                       <img src="./imagens/top10/coverTop10.png">
+                       <div>
+                            <h3>Black Cover</h3>
+                            <span><i class="fas fa-eye"></i>  +1M</span>
+                       </div>
+                    </div>   
+                </div>
+
+                <div class="top10_B_itens">
+                    <div class="top10_ranking">
+                        <div>9</div>
+                    </div>
+                    <div class="top10_anime">
+                       <img src="./imagens/top10/bokuTop10.png">
+                       <div>
+                            <h3>Boku no Hero</h3>
+                            <span> <i class="fas fa-eye"></i> +1M</span>
+                       </div>
+                    </div>   
+                </div>
+               
+                
+            </article>
+        </aside>
+
+
+        <section class="ultimos_animes">
+            <div class="ultimos_animes_A">
+               Ultimos Animes Adicionados
+            </div>
+            <div class="ultimos_animes_B">
+                <div class="ultimos_animes_itens">
+                    <img src="./imagens/ultimos animes/kimetsu.png">
+                    <p>Demon Slayer Mugen Train</p>
+                </div>
+                <div class="ultimos_animes_itens">
+                    <img src="./imagens/ultimos animes/your name.png">
+                    <p>Your Name</p>
+                </div>
+                <div class="ultimos_animes_itens">
+                    <img src="./imagens/ultimos animes/boku hero.png">
+                    <p>Bonu No hero Academia</p>
+                </div>
+                <div class="ultimos_animes_itens">
+                    <img src="./imagens/ultimos animes/tokyo.png">
+                    <p>Tokyo revenger</p>
+                </div>
+                <div class="ultimos_animes_itens">
+                    <img src="./imagens/ultimos animes/fairy tail.png">
+                    <p>Fairy tail</p>
+                </div>
+                <div class="ultimos_animes_itens">
+                    <img src="./imagens/ultimos animes/ghol.png">
+                    <p>Tokyo Ghoul</p>
+                </div>
+                <div class="ultimos_animes_itens">
+                    <img src="./imagens/ultimos animes/note[.png">
+                    <p>Death Note</p>
+                </div>
+                <div class="ultimos_animes_itens">
+                    <img src="./imagens/ultimos animes/kaguya sama.png">
+                    <p>Kaguya Sama Dublado</p>
+                </div>
+                <div class="ultimos_animes_itens">
+                    <img src="./imagens/ultimos animes/art online.png">
+                    <p>Sword Art online 3</p>
+                </div>
+                <div class="ultimos_animes_itens">
+                    <img src="./imagens/ultimos animes/kaisen.png">
+                    <p>Jujutsu Kaisen</p>
+                </div>
+                <div class="ultimos_animes_itens">
+                    <img src="./imagens/ultimos animes/bestas.png">
+                    <p>Bestar</p>
+                </div>
+                <div class="ultimos_animes_itens">
+                    <img src="./imagens/ultimos animes/kokoro.png">
+                    <p>Kokoro Connect</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+    <script src="./js/scriptInfo.js"></script>
+</body>
+</html>

@@ -1,0 +1,506 @@
+.header .header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 100%;
+    
+    padding: 15px 5px 0px 5px;
+}
+
+
+.header_nav{
+    flex-grow: 1;
+}
+
+.SearchModal{
+    flex-grow: 1;
+    position: relative;  
+    cursor: pointer;
+}
+
+.IconSearch{
+    height: 55px;
+    width: 55px;
+    background-color: #49257B;
+    position: absolute;
+    top: -32px;
+    right: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.IconSearch i{
+    position: relative;
+    top: 15px;
+    font-size: 1.5rem;
+}
+
+
+.header .header_container ul{
+    display: flex;
+    justify-content: center;
+    
+}
+.header_container ul li{
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+
+.header_container li a{
+    color: #FFFFFB;
+    transition: .188888s ease-in-out;
+    padding: 5px;
+   
+}
+
+.header_container li a i{
+    margin-right: 10px;
+}
+
+.header_container li a:hover{
+    color: #492E98;
+}
+
+
+/*Fim do Header */ 
+
+.informativo .infoA{
+    height: 27%;
+    background-color: #212121;
+    padding: 12px 20px;
+    font-size: 14px;
+   
+}
+
+.informativo .infoB{
+    height: 77%;
+    background-color: #1C1C1C;
+    padding: 20px;
+    font-size: 14px;
+    
+}
+
+.informativo .infoB div{
+    margin-bottom: 10px;
+    
+}
+.informativo .infoB  p {
+    line-height: 15.7px;
+}
+
+.btn-info{  
+  position: relative;
+   top: -100%;
+   left: 97%;
+   background: #49257B;
+   height: 30px;
+   width: 30px;
+   border: none;
+   cursor: pointer;
+}
+
+.btn-info i{
+    font-size: 20px;
+    color: #fff;
+}
+/* Fim do Informativo */ 
+
+/*Lançamentos */
+
+.lancamentos .lancamentos_A{
+    width: 100%;
+    height: 15%;
+    background-color:#212121 ;
+    padding: 12px 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lancamentos .lancamentos_B{
+    width: 100%;
+    height: 85%;
+
+    background-color: #1C1C1C;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 8px;
+    
+}
+
+.btn-lancamentos{
+    height: 28px;
+    width: 71px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    background-color: rgb(60,60,60);
+    text-align: center;
+   cursor: pointer;
+   transition: .2s ease;
+}
+
+.btn-lancamentos:hover{
+    background-color: #49257B;
+}
+
+
+.lancamentos .lancamentos_itens{
+    max-width: 140px;
+    min-width: 100px;
+    height: 246px;
+
+    position: relative;
+
+    margin-top: 10px;
+   
+    padding: 3px;
+    
+  
+}
+
+.lancamentos .lancamentos_itens img{
+    border-radius: 3px;
+}
+
+.lancamentos .lancamentos_itens_icons{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+   background-color: #49257B;
+    height: 34px;
+    width: 34px;
+    border-radius: 100%;
+    
+}
+
+.lancamentos .lancamentos_itens_icons i{
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    right: -14px;
+    top: 6px;
+    color: #fff;
+}
+
+.lancamentos_itens_status{
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    background-color: #49257B;
+    font-size: .6rem;
+    font-weight: bold;
+    height: 25px;
+    width: 50px;
+    display: grid;
+    place-content: center;
+    border-radius:2px ;
+}
+
+
+.lancamentos .lancamentos_itens_eps{
+    position: absolute;
+    top: 67%;
+    left: 3px;
+    padding: 4px;
+    background-color: #f0ab1a;
+    height: 26px;
+    width: 75%;
+}
+
+.lancamentos .lancamentos_itens_eps span{
+    font-size: .9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lancamentos_titulo_rebelde{
+    margin-top: 6px;
+    font-size: 13px;
+    opacity: .7;
+    
+    text-align: center;
+}
+.lancamentos .lancamentos_titulo{
+    font-size: 13px;
+    opacity: .7;
+    margin-top: 7px;
+    text-align: center;
+}
+
+
+
+
+.discord-rebelde{
+    height: 299px;
+}
+
+/*Fim Lalamentos e Discrod */
+
+
+
+/*Ultimos lancados */ 
+.ultimos_lancados{
+    position: relative;
+}
+.ultimos_lancados .ultimos_lancados_A{
+    width: 100%;
+    height: 20%;
+    background-color:#212121 ;
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+.ultimos_lancados .ultimos_lancados_B{
+    width: 100%;
+    height: 80%;
+    
+
+    background-color: #1C1C1C;
+    
+    display: flex;
+    padding: 8px;
+
+    overflow: hidden;
+}
+
+.ultimos_lancados .ultimos_lancados_B .lancamentos_itens{
+    
+    min-width: 15%;
+    margin-left: 10px; 
+    transition: .3s;
+}
+
+.lancamentos_itens h3{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 6px;
+    opacity: .7;
+    cursor: pointer;
+}
+.lancamentos_itens p{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 3px;
+    opacity: .7;
+    cursor: pointer;
+}
+
+/*Botões */
+
+
+
+ #btn-lancados-back,#btn-lancados-next{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+#btn-lancados-next{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+#btn-lancados-back{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+
+
+
+/* Ultimos adicionados */
+
+.adicionados_itens p{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 3px;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.adicionados_itens h3{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 6px;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.ultimos_adicionados{
+    position:relative;
+}
+
+.ultimos_adicionados_A{
+    width: 100%;
+    height: 20%;
+    background-color:#212121 ;
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+.ultimos_adicionados_B{
+    width: 100%;
+    height: 80%;
+    
+
+    background-color: #1C1C1C;
+    
+    display: flex;
+    padding: 8px;
+
+    overflow: hidden;
+    
+}
+
+.adicionados_itens{
+    
+    min-width: 15%;
+    margin-left: 10px; 
+    transition: .3s;
+}
+
+.adicionados_itens img{
+    cursor: pointer;
+}
+
+#btn-adicionados-back, #btn-adicionados-next{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+#btn-adicionados-next{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+
+#btn-adicionados-back{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+/*Ultimos Animes */
+
+.ultimos_animes_A  {
+   font-size: 14px;
+   padding: 11px 0px 10px 15px;
+   background-color: #212121;
+   height: 45px;
+}
+
+
+.ultimos_animes_B{
+    height: calc(100% - 45px);  
+    background-color: #1C1C1C; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 15px;
+}
+
+.ultimos_animes_B .ultimos_animes_itens{
+    margin-left: 10px;
+    flex: 1 1 180px;
+    border-radius: 4px;
+}
+
+.ultimos_animes_itens p{
+    font-size: .9rem;
+    margin-top: 10px;
+    text-align: center;
+    opacity: .7;
+    font-weight: bold;
+}
+
+
+/* TOP 10 ANIMES */ 
+
+.top10 .top10_A{
+    height: 40px;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 6px;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.top10 {
+   background-color: #212121;  
+}
+
+.top10 .top10_B .top10_B_itens:first-child{
+    height: 150px;
+    background-image: url("../imagens/top10/OneTop10.png");
+    display: flex;
+    align-items: flex-end;
+}
+
+.top10 .top10_B .top10_B_itens{
+    height: 110px;
+    border: 1px solid grey ;
+    font-size: 13px;
+   display: flex;
+   align-items: center;
+}
+
+.top10_ranking{
+    width: 20%;    
+    font-size: 1.2rem;
+}
+
+.top10_ranking div:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.top10_ranking div{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+   border: 2px solid grey;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.top10_anime{
+    display: flex;
+    width: 75%;
+    justify-content: space-around;   
+}
+
+.top10_anime h3{
+    opacity: .7;
+    width: 150px;
+    margin-bottom: 8px;
+}
+
+.top10_anime span{
+    opacity: .5;
+}
+
+.top10_B_itens img{
+    height: 72px;
+    width: 52px;
+    margin-left: 10px;
+}

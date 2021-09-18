@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  rgb(14,14,14);
+    color: #fff;
+    font-family: Helvetica;
+   
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+ 
+    
+}
+
+/* Estrutura */ 
+.main{
+    
+    width: 95vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 315px;
+    grid-template-areas: "header header"
+                          "informativo informativo"
+                          "lancamentos discord"
+                          "ultimos_lancados top10"
+                          " ultimos_adicionados top10"
+                          "ultimos_animes top10";
+    gap: 20px;
+}
+
+.header{
+    grid-area: header;
+    height: 111px;
+   
+   
+}
+
+.informativo{
+    grid-area: informativo;
+     height: 181px;
+     width: 100%;   
+    opacity: .9;
+    
+}
+
+.lancamentos{
+    grid-area: lancamentos;
+    
+    height: 300px;
+}
+
+.discord{
+    grid-area: discord;
+    height: 300px;
+}
+
+.ultimos_lancados{
+    grid-area: ultimos_lancados;
+    height: 230px;
+}
+
+.ultimos_adicionados{
+    grid-area: ultimos_adicionados;
+    height: 230px;
+}
+
+.ultimos_animes{
+    grid-area: ultimos_animes;
+    height: 693px;
+    margin-bottom: 100px;
+}
+
+.top10{
+    grid-area: top10;
+    height: 1185px;
+}
+
+
+/* Fim da Estrutura */ 
