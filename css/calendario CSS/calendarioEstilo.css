@@ -1,0 +1,93 @@
+#headerCalendario{
+    padding: 21px 40px;
+}
+
+#semanaCalendario{
+    max-width:518px;
+    height: 41px;
+    margin: 40px 40px 20px 40px;
+    display: flex;
+    border-radius: 5px;
+}
+
+#semanaCalendario .semanaCalendario-item{
+    flex-grow: 1;
+    padding: 12px 10px;
+    cursor: pointer;
+    transition: all .2s;
+    background-color: #212121;
+    font-size: 14px;
+}
+#semanaCalendario .semanaCalendario-item.ativo{
+    background-color:  #F0AB1A; 
+}
+
+#semanaCalendario .semanaCalendario-item:hover{
+    background-color: #F0AB1A;
+}
+
+.animesDia{
+   display: none;
+}
+
+.animesDia.ativo{
+    max-width: 1495px;
+    height: auto;
+   
+    margin: 0px 41px;
+    background-color: #212121;
+    display: block;
+    margin-bottom: 500px;
+}
+
+
+#animesDia .animesDia-calendarioA{
+    height: 13%;
+    font-size: 14px;
+    padding:15px 15px ;
+    font-weight: bold;
+    
+}
+
+#animesDia .animesDia-calendarioB{
+    height:87%;
+    padding:15px 15px ;
+    display: flex;
+   flex-wrap: wrap;
+}
+
+#animesDia .animesDia-calendarioB div{
+    width: 170px;
+    height: 295px;
+    margin-right: 10px;
+   
+    cursor: pointer;
+    position: relative;
+}
+
+.animesDia-calendarioB p{
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: center;
+    opacity: .7;
+}
+
+.animesDia-calendarioB .calendario-icons{
+    position: absolute;
+    top:10px;
+    right: 5px;
+    color: white;
+   
+    font-size: .5888rem;
+    padding: 13px;
+    border-radius: 50%;
+    background-color:#49257B ;
+}
+
+
+
+
+
+
+
+

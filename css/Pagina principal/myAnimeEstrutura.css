@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
-}body{
+}
+body{
     height: 100vh;
     width: 100vw;
     background-color:  rgb(14,14,14);
@@ -23,8 +23,7 @@ a{
 img{
     width: 100%;
     display: block;
- 
-    
+    transition: all .3s;  
 }
 
 /* Estrutura */ 
@@ -45,9 +44,7 @@ img{
 
 .header{
     grid-area: header;
-    height: 111px;
-   
-   
+    height: 111px; 
 }
 
 .informativo{
@@ -60,8 +57,8 @@ img{
 
 .lancamentos{
     grid-area: lancamentos;
-    
-    height: 300px;
+    overflow: hidden;
+    height: auto;
 }
 
 .discord{
@@ -72,6 +69,8 @@ img{
 .ultimos_lancados{
     grid-area: ultimos_lancados;
     height: 230px;
+    
+   
 }
 
 .ultimos_adicionados{
@@ -81,7 +80,7 @@ img{
 
 .ultimos_animes{
     grid-area: ultimos_animes;
-    height: 693px;
+    height: auto;
     margin-bottom: 100px;
 }
 

@@ -9,6 +9,7 @@ function caroseulA(){
     btnBack.addEventListener('click', itemAnterior)
 
     function proximoItem(){
+        
         valor = valor + 170
         lancamentosItens.forEach((item)=>{
             if(valor > 510){
@@ -19,6 +20,10 @@ function caroseulA(){
                 item.style.transform = `translateX(${-valor}px)`
             }
         })
+
+        let tamanhoTela = document.body.clientWidth
+        
+        
     }
 
     function itemAnterior(){
@@ -117,3 +122,36 @@ function modalHeader(){
 }
 
 modalHeader()
+
+function controleTitulo (){
+    const titulos = document.querySelectorAll('[data-titulo="top10"] h3')
+    const limiteTitulo = 16
+
+    for(let t of titulos){
+        const limite = t.innerText.length > limiteTitulo
+        const validador = limite? '...' : ''
+        t.innerText = t.innerText.substring(0, limiteTitulo) + validador
+    }
+}
+
+controleTitulo()
+
+function menuMobile(){
+    const menu = document.querySelector('[data-mobile="menu"]')
+    const nav = document.querySelector('[modal-mobile="nav_header"]')
+    const btnFechar = document.querySelector('[data-mobile="fechar"]')
+
+    menu.addEventListener('click', ()=>{
+        nav.classList.add('ativo')
+        menu.style.display = 'none'
+        btnFechar.classList.add('ativo')
+    })
+
+    btnFechar.addEventListener('click', ()=>{
+        nav.classList.remove('ativo')
+        menu.style.display = 'block'
+        btnFechar.classList.remove('ativo')
+    })
+}
+
+menuMobile()

@@ -1,0 +1,286 @@
+/*Vamos tirar a indição de numero de episodios */
+@media(max-width:1590px){
+    .lancamentos_itens_eps{
+        display: none;
+    }
+
+    .ultimos_animes_B .ultimos_animes_itens{
+        margin: 5px;
+    }
+
+    .lancamentos{
+        max-height: 300px;
+    }
+}
+
+[data-mobile="fechar"]{
+    display: none;
+}
+
+/*Aqui temos a primeira quebra */
+@media(max-width:1199px){
+   
+    .main{
+        max-width: 1100px;
+        grid-template-areas: "header header"
+                            " informativo informativo"
+                            "lancamentos lancamentos"
+                            "ultimos_lancados ultimos_lancados "
+                            "ultimos_adicionados ultimos_adicionados"
+                            "ultimos_animes ultimos_animes"
+                            "discord top10"
+                            
+    }
+   
+    .ultimos_animes{
+        margin-bottom: 0px;
+        
+    }
+
+    .ultimos_animes_B .ultimos_animes_itens{
+        margin: 5px;
+    }
+   
+
+    .header_nav ul li{
+        margin: 0;
+    } 
+
+  
+}
+
+
+@media(max-width: 1019px){
+   
+    .informativo{
+        max-width: 98%;
+        height: auto;
+        padding-right: 1%;
+        padding-left: 2%;
+    }
+
+    .lancamentos{
+        max-width: 98%;
+        height: auto;
+        padding-right: 1%;
+        padding-left: 2%;
+        overflow:hidden;
+    }
+
+    .ultimos_lancados{
+        max-width: 98%;
+        height: auto;
+        padding-right: 1%;
+        overflow:hidden;
+        padding-left: 2%;
+    }
+
+    .ultimos_adicionados{
+        max-width: 98%;
+        height: auto;
+        padding-right: 1%;
+        overflow:hidden;
+        padding-left: 2%;
+    }
+
+    .ultimos_animes{
+        max-width: 98%;
+        height: auto;
+        padding-right: 1%;
+        overflow:hidden;
+        padding-left: 2%;
+    }
+
+  
+    
+}
+
+/* 985px podemos incluir o menu mobile */
+@media(max-width:985px){
+    
+    .header .header_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_container .SearchModal{
+        max-width: 45px;
+    }
+    [data-mobile="fechar"].ativo{
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        
+    }
+
+    [data-mobile="fechar"].ativo i{
+        font-size: 1.9rem;
+     }
+
+    [data-mobile="fechar"]{
+        display: none;
+    }
+
+
+    .container_nav_mobile{
+        position: relative;
+        top:10px;
+        width: 50px;
+        height: 30px;
+        display: grid;
+        
+        cursor: pointer;
+    }
+
+    .nav_mobile{
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        box-shadow: 0 7px #fff, 0 -7px #fff;
+        
+        padding: 2px;
+        
+    }
+
+    .header_nav{
+        display: none;
+
+    }
+
+    .header_nav.ativo{
+        display: block;  
+        position: fixed;
+        right: 0px;
+
+        width: 100%;
+        height: 5000px;
+        
+
+        display: grid;
+        place-content: center;
+
+        z-index:1;
+        background-color: rgba(0,0,0,.9);
+    }
+   
+   
+
+    .header_nav .header_lista{
+        flex-direction: column;
+        margin-top: 400px;
+    }
+
+    .header_nav .header_lista li{
+        margin:15px 0px;
+        font-size:1.3rem;
+    }
+    
+
+    .lancamentos .lancamentos_B{
+        overflow-x: auto;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling:touch;
+        
+    }
+
+ 
+
+}
+
+
+@media(max-width:615px){
+    .ultimos_lancados, .ultimos_adicionados, .ultimos_animes h3{
+        font-size: .8rem;
+        
+    }
+
+    .header_container .SearchModal .IconSearch i{
+        font-size: 1.4rem;
+        margin-top: -10px;
+    }
+
+    .header_container .SearchModal .IconSearch{
+        width: 40px;
+        height: 40px;
+        top: -25px;
+        
+    }
+}
+
+@media(max-width:426px){
+   .header .header_container .logo {
+        width: 200px;
+    }
+
+    .ultimos_animes_B{
+        justify-content: center;
+    }
+
+    .ultimos_animes_B .ultimos_animes_itens{
+        margin-bottom: 30px;
+    }
+
+    .informativo .infoB{
+        overflow-y: auto;
+    }
+    .btn-info{
+        top: 0%;
+        right: 5px;
+    }
+
+    .main{
+        max-width: 1100px;
+        grid-template-areas: "header header"
+                            " informativo informativo"
+                            "lancamentos lancamentos"
+                            "ultimos_lancados ultimos_lancados "
+                            "ultimos_adicionados ultimos_adicionados"
+                            "ultimos_animes ultimos_animes"
+                            "top10 top10"
+                            "discord discord"
+                            
+    }
+ 
+    .top10{
+        height: auto;
+        padding: 10px;
+        
+        width: 96%;
+        margin-left: 5px;
+        overflow-x: scroll;
+    }
+    .top10_B {
+        display: flex;
+        
+    }
+
+    .top10 .top10_B .top10_B_itens:first-child{
+        padding: 25px;
+        height: auto;
+        color:#fff;
+        font-weight: bold;
+    }
+
+
+ 
+}
+
+@media(max-width:376px){
+    .modal_container .modal{
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal_container .modal .modal_input{
+        width: 70%;
+
+    }
+
+    .modal_container .modal .fecharModal{
+        right: 85px;
+    }
+}
+
+
